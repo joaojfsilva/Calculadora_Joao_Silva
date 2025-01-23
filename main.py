@@ -30,6 +30,9 @@ def calculadora_v2(num1: float, num2: float, operador: str) -> float:
         "+": lambda: num1 + num2,
         "%": lambda: num1 % num2,
         "^": lambda: num1 ** num2,
+        "-": lambda: num1 - num2,
+        "*": lambda: num1 * num2,
+        "/": lambda: num1 / num2,
     }
     funcao = operacoes.get(operador)
     if funcao:
